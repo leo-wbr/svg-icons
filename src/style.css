@@ -1,0 +1,51 @@
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Header */
+.row--header {
+  background: linear-gradient(180deg, #3563c5, #1c4cb4);
+  box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+.row__heading {
+  font-size: 3em;
+}
+
+/* Icons Section */
+.container--icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.row--icons {
+  max-width: 992px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.icons {
+  background-color: rgba(51, 170, 152, 0.234);
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 15px 0px;
+  border-radius: 0.25em;
+  padding: 1em;
+}
+
+.icon__btn {
+  background-color: #03acef98;
+  color: #fff;
+  font-size: 1.1em;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 7px;
+  margin-top: 0.5em;
+}
+.icon__btn:hover {
+  background-color: #03aceff0;
+}
