@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"src/**/*.{html,css,js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html"
+    "format": "prettier --write \"docs/**/*.{html,css,js,jsx}\"",
+    "lint": "eslint \"docs/**/*.{js,jsx}\" --quiet",
+    "dev": "parcel docs/index.html"
   },
   "repository": {
     "type": "git",
