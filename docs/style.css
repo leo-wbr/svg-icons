@@ -24,7 +24,7 @@ body {
   margin-top: 3em;
 }
 .row--icons {
-  max-width: 992px;
+  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -35,17 +35,57 @@ body {
   box-shadow: rgb(0 0 0 / 5%) 0px 5px 15px 0px;
   border-radius: 0.25em;
   padding: 1em;
+  flex-basis: 15%;
 }
-
 .icon__btn {
+  text-align: center;
+}
+.btn {
   background-color: #03acef98;
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1em;
+  font-weight: bold;
   border: none;
-  padding: 0.5em 1.5em;
+  padding: 0.35em 2.5em;
   border-radius: 7px;
   margin-top: 0.5em;
+  cursor: pointer;
 }
-.icon__btn:hover {
+.btn:hover {
   background-color: #03aceff0;
+}
+
+.btn-shake,
+.btn-shake:hover {
+  background-color: green;
+}
+.btn-shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: scale(1.1);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
